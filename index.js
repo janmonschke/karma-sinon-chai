@@ -18,6 +18,7 @@ var framework = function(files) {
   if (!_(files).map('pattern').find(endsWith(path.relative(__dirname, sinonPath)))) {
     var sinonBasePath = path.dirname(sinonPath);
     var sinonFiles = [
+      "../node_modules/lolex/lolex.js",
       "./sinon.js",
       "./sinon/util/core.js",
       "./sinon/extend.js",
@@ -35,7 +36,14 @@ var framework = function(files) {
       "./sinon/test_case.js",
       "./sinon/match.js",
       "./sinon/format.js",
-      "./sinon/log_error.js"
+      "./sinon/log_error.js",
+      "./sinon/util/fake_xml_http_request.js",
+      "./sinon/util/fake_xdomain_request.js",
+      "./sinon/util/xhr_id.js",
+      "./sinon/util/xhr_ie.js",
+      "./sinon/util/fake_timers.js",
+      "./sinon/util/event.js",
+      "./sinon/util/timers_ie.js"
     ];
 
     _.forEach(sinonFiles.reverse(), function(relativeFile) {
