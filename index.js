@@ -37,12 +37,14 @@ var framework = function(files) {
       "./sinon/match.js",
       "./sinon/format.js",
       "./sinon/log_error.js",
+      "./sinon/util/event.js",
+      "./sinon/util/fake_timers.js",
+      "./sinon/util/fake_server.js",
+      "./sinon/util/fake_server_with_clock.js",
       "./sinon/util/fake_xml_http_request.js",
       "./sinon/util/fake_xdomain_request.js",
       "./sinon/util/xhr_id.js",
       "./sinon/util/xhr_ie.js",
-      "./sinon/util/fake_timers.js",
-      "./sinon/util/event.js",
       "./sinon/util/timers_ie.js"
     ];
 
